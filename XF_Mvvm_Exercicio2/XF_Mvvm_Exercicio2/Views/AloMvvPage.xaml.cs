@@ -15,7 +15,7 @@ namespace XF_Mvvm_Exercicio2.Views
     {
         public AloMvvPage()
         {
-            InitializeComponent();
+            //InitializeComponent();
 
             this.BindingContext = new AloMvvmViewModel();
         }

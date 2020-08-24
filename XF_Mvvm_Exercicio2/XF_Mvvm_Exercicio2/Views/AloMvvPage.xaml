@@ -1,7 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XF_Mvvm_Exercicio2.Views.AloMvvPage">
-    
+             x:Class="XF_Mvvm_Exercicio2.Views.AloMvvPage"
+             Title="Xamarin - MVVM">
+
+    <StackLayout>
+        <Entry x:Name="{Binding Nome}" Placeholder="Informe seu nome" FontSize="Large"/>
+        <Button Text="Boas Vindas" TextColor="White" BackgroundColor="Teal" FontSize="Medium"
+                Command="{Binding BoasVindasCommand}"/>
+        <Label x:Name="lblOla" Text="{Binding MensagemBoasVindas}" TextColor="Navy" FontSize="30"
+               HorizontalOptions="Center"/>
+    </StackLayout>
     
 </ContentPage>

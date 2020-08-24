@@ -1,6 +1,8 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XF_Mvvm_Exercicio2.ViewModels;
+using XF_Mvvm_Exercicio2.Views;
 
 namespace XF_Mvvm_Exercicio2
 {
@@ -10,7 +12,7 @@ namespace XF_Mvvm_Exercicio2
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new AloMvvPage());
         }
 
         protected override void OnStart()
